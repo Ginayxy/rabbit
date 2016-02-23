@@ -1,0 +1,18 @@
+{
+  "name": "decorating",
+  "version": "1.0.0",
+  "description": "decorating project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "decorating"
+  ],
+  "author": "Yu <ginayxy@163.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  }
+}

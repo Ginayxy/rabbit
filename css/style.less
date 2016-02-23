@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document
+Use for:	用户页面
+Version:	1.00
+Date:		2015/12/10
+Author:		Gina（ginayxy@163.com）
+Update:
+*/
+
+@import "reset.less";
+@import "preset.less";
+@import "pop.less";
+
+/* Focus */
+.focusImgs{ position: relative; margin-bottom: 5px; text-align: center; background: @base-gray; color: #fff;
+  .swiper-container{ height: 250px; }
+  .swiper-slide{ overflow: hidden;
+    a{ display: block; width: 100%; height: 100%; position: relative; }
+    img{ min-width: 100%; max-width: 120%; min-height: 100%; max-height: 230%; }
+    .swiper-desc{ position: absolute; bottom: 0; width: 100%; padding: 15px 5% 35px; height: auto; background-color: rgba(0, 0, 0, .6);;
+      p{ font-size: 1.4rem; line-height: 1.4rem; color: #fff; font-weight: bold; overflow: hidden; white-space: nowrap; text-align: left; padding-left: 10px; border-left: 5px solid #d9534f; }
+    }
+    .li-primary{ display: inline-block; width: 4px; height: 14px; background-color: @brand-warning; vertical-align: middle; }
+  }
+}
+
+@media (min-width: 480px){
+  .focusImgs .swiper-container{ height: 250px; }
+}
+@media (min-width: 768px){
+  .focusImgs .swiper-container{ height: 300px; }
+}
+@media (min-width: 992px){
+  .focusImgs .swiper-container{ height: 420px; }
+}
+.swiper-pagination{ position: absolute; bottom: 6px; width: 100%; z-index: 90;
+  .swiper-pagination-bullet{ display: inline-block; width: 8px; height: 8px; border-radius: 8px; border: 1px solid #fff; margin: 0 8px; opacity: .5; }
+  .swiper-pagination-bullet-active{ border: 1px solid #fff; background: #fff; opacity: .9; }
+}
+/* Main */
+section{ margin-bottom: 5px; padding: 15px; background-color: #fff;
+  .fa-home, .fa-square-o, .fa-check-square-o{ margin-right: 5px; }
+  p{ line-height: 15px; }
+  ul{ margin: 7px 0 0; padding-left: 20px; font-size: 1.3rem;
+    li{ position: relative; padding: 5px 0; line-height: 13px; }
+    .elc{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  }
+  .li-time{ margin-right: 20px; }
+  .form-error{ padding: 6px 13px; font-size: 12px; color: #ee4242; background-color: @base-bg; text-align: center; opacity: 0; -webkit-transition-duration: .5s; transition-duration: .5s;}
+}
+.btn{ display: inline-block; width: 125px; height: 30px; line-height: 30px; font-size: 1.4rem; background-color: #fff; border: @base-gray solid 1px; -webkit-border-radius: 3px; border-radius: 3px; }
+.btn-lg{ margin: 10px 5px 5px; }
+.btn-xs{ float: right; margin-top: -2px; width: 25%; height: 18px; line-height: 18px; font-size: 1.2rem; }
+.red{ color: @brand-warning; border: @brand-warning solid 1px; }
+.w-70{ display: inline-block; width: 72%; }
+.li-detail{ float: right; width: 28%; color: @brand-info; text-align: right; }
+.sec-err ul li{ padding-top: 0; line-height: 18px; color: @brand-warning; }
+.sec-order table{ width: 100%; margin-top: 12px; font-size: 1.3rem; text-align: center; }
+section textarea{ width: 100%; padding: 3%; margin-top: 12px; font-size: 1.3rem; text-align: left; border: @base-gray solid 1px; }
+.sec-order ul{ font-size: 0; }
+.sec-order ul li{ display: inline-block; width: 50%; font-size: 1.4rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+input[type=checkbox]{ margin-right: 5px; vertical-align: -10%; }
+@media screen and (min-width: 321px){
+  .sec-order ul li{ width: 33.3%; }
+}

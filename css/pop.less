@@ -1,0 +1,36 @@
+@import "preset.less";
+.pop{ position: fixed; display: none; top: 50%; left: 50%; width: 82%; padding: 10px 15px 20px; -webkit-transform: translateX(-50%) translateY(-50%); text-align: center; z-index: 900; background-color: @base-bg;
+  .pop_close{ float: right; font-size: 16px; color: #aaa; }
+  .pop-main{ clear: both;
+    .title{ display:none; font-size: 1.6rem; font-weight: 500; }
+    .content{ padding-top:7px; padding-bottom: 8px; font-size: 1.4rem;
+      img{width: 100%; max-height: 200px;}
+    }
+  }
+  .input{ display: block; width: 100%; height: 80px; padding: 6px 12px; font-size: 1.4rem; line-height: 1.5714286; color: @base-gray; background-color: white;
+    border: 1px solid #f0f0f0; border-radius: 0;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  .input:focus{ border-color: #d6d6d6; outline: 0 }
+  .input::-webkit-input-placeholder{ color: #dedede; }
+  .form-error{ display: none; padding: 6px 13px; font-size: 12px; color: #ee4242; background-color: @base-bg; text-align: center; opacity: 0; -webkit-transition-duration: .5s; transition-duration: .5s;}
+}
+
+/* MaskImgs */
+.maskImgs{ position: fixed; display: none; top: 0; right: 0; left: 0; bottom: 0; width: 100%; height: 600px; overflow: hidden; text-align: center; background: @base-gray; color: #fff; z-index: 100;
+  .slider-container{
+    .swiper-wrapper{
+      a{ position: absolute; display: block; top:50%; width: 100%; -webkit-transform: translateY(-50%); transform: translateY(-50%);}
+      img{ max-width: 100%; vertical-align: middle; }
+      .slider-desc{ position: absolute; bottom: 0; width: 100%; padding: 15px 5% 35px; height: auto; background-color: rgba(0, 0, 0, .3);;
+        p{ font-size: 1.4rem; line-height: 1.4rem; color: #fff; font-weight: bold; overflow: hidden; white-space: nowrap; text-align: left; padding-left: 10px; border-left: 5px solid #d9534f; }
+      }
+    }
+  }
+  .btn-m-close{position: absolute; top:20px; right: 15px; display: block; width: 72px; height: 30px; line-height: 30px; font-size: 1.6rem; color: @base-bg;
+    background: rgba(128,128,128,.4);
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.3) inset; box-shadow: 0 0 1px rgba(0,0,0,.3) inset; border-radius: 2px; -webkit-border-radius: 2px;
+    z-index:1000;
+  }
+  .swiper-button-next, .swiper-button-prev{position: fixed;}
+}

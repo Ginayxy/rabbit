@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document
+Use for:	工人页面
+Version:	1.00
+Date:		2015/12/23
+Author:		Gina（ginayxy@163.com）
+Update:
+*/
+
+@import "reset.less";
+@import "preset.less";
+@import "pop.less";
+
+/* Main */
+section{ margin-bottom: 5px; padding: 15px; background-color: #fff;
+  .fa-home, .fa-square-o, .fa-check-square-o{ margin-right: 5px; }
+  p{ line-height: 15px; }
+  ul{ margin: 7px 0 0; padding-left: 20px; font-size: 1.3rem;
+    li{ position: relative; padding: 5px 0; line-height: 13px; }
+    .elc{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  }
+  .li-time{ margin-right: 20px; }
+}
+.btn{ display: inline-block; width: 125px; height: 30px; line-height: 30px; font-size: 1.4rem; background-color: #fff; border: @base-gray solid 1px; -webkit-border-radius: 3px; border-radius: 3px; }
+.btn-lg{ margin: 10px 5px 5px; }
+.btn-xs{ float:right; margin-top: -2px; width: 25%; height: 18px; line-height: 18px; font-size: 1.2rem;}
+.red{ color:@brand-warning; border: @brand-warning solid 1px;  }
+.w-70{ display:inline-block; width: 72%;}
+.li-detail{ float:right; width: 28%; color: @brand-info; text-align: right; }
+.sec-err ul li, .sec-arr ul li{ padding-top: 0; line-height: 18px; color: @base-gray; }
+.sec-err ul li{color: @brand-warning}
+.sec-order table{ width: 100%; margin-top: 12px; font-size: 1.3rem; text-align: center;}
+section textarea{ width: 94%; padding: 3%; margin-top: 12px; font-size: 1.3rem; text-align: left; border: @base-gray solid 1px;}
+.sec-order ul{font-size: 0;}
+.sec-order ul li{ display:inline-block; width:50%; font-size: 1.3rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+@media screen and (min-width: 321px){
+  .sec-order ul li{ width: 33.3%; }
+}
+
+/* Photo */
+.photo-take{display: block; text-align: center;margin-top: 15px; margin-left: 10px; margin-right: 10px;
+  img{ width: 22%; }
+  p{ margin-bottom: 20px;padding-right:10px}
+  hr{border: 1px solid #d9d9d9;}
+}
+.photo-list{ text-align: center; padding: 0 10px; font-size: 0;
+  li{display: inline-block; width: 33.3333333%}
+  img{width: 100px; height: 100px;}
+}
+@media (max-width: 374px){
+  .photo-list img{width: 80px; height: 80px;}
+}
+
+/* House */
+.select{display: block; width: 200px; height: 30px; margin: 15px auto;}

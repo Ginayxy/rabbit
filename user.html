@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>小兔子装饰|用户</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="css/swiper-3.2.7.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="main" data-current="false">
+    <header>
+        <p><span class="spr user-head"></span>
+        <span class="user-info">
+            <!--<span class="fs-lg">Gina</span><br>GASStudio-->
+        </span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNavbar"
+                    aria-expanded="false" aria-controls="collapseNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </p>
+    </header>
+    <div class="collapse navbar-collapse" id="collapseNavbar">
+        <ul class="nav">
+            <li id="btn_maskImgs"><a href="javascript:;">查看设计效果图</a></li>
+        </ul>
+        <ul class="nav" id="j_nav">
+            <li><a href="#progress">进度</a></li>
+            <li><a href="#issue">问题</a></li>
+            <li><a href="#error">异常</a></li>
+            <li><a href="#alter">变更</a></li>
+            <li><a href="#order">订购</a></li>
+        </ul>
+    </div>
+    <div class="focusImgs">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--<div class="swiper-slide">-->
+                <!--<a href="javascript:;">-->
+                <!--<img alt="" src="img/example.png">-->
+                <!--<div class="swiper-desc"><p>暂无图片</p></div>-->
+                <!--</a>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <section id="progress">
+        <p class="fs-lg"><span class="fa fa-home"></span>装修进度</p>
+        <ul>
+            <li class="elc t_progress">当前进度：无</li>
+        </ul>
+        <div class="t-center"><a href="javascript:;" class="btn btn-lg btn-pro-cfm">验收确认</a><a href="javascript:;" class="btn btn-lg btn-pro-step">查看剩余工序</a>
+        </div>
+    </section>
+    <section id="issue">
+        <p class="fs-lg"><span class="fa fa-home"></span>装修问题</p>
+        <ul>
+            <!--<li><span class="elc w-70"><span class="li-time">11.28</span>装修问题</span><a class="li-detail">待回复 >></a></li>-->
+            <!--<li><span class="elc w-70"><span class="li-time">11.28</span>装修问题</span><a class="li-detail">查看详情 >></a></li>-->
+            <!--<li><span class="elc w-70"><span class="li-time">11.28</span>装修问题装修问题装修问题装修问题装修问题</span><a class="li-detail">查看详情 >></a></li>-->
+        </ul>
+    </section>
+    <section id="error" class="sec-err">
+        <p class="fs-lg"><span class="fa fa-home"></span>异常信息</p>
+        <ul>
+            <!--<li><span class="li-time">11.28</span>异常信息</li>-->
+            <!--<li><span class="li-time">11.28</span>异常信息</li>-->
+            <!--<li><span class="li-time">11.28</span>异常信息异常信息异常信息异常信息异常信息异常信息</li>-->
+        </ul>
+    </section>
+    <section id="alter">
+        <p class="fs-lg"><span class="fa fa-home"></span>装修需求变更</p>
+        <ul>
+            <!--<li><span class="elc w-70"><span class="li-time">11.28</span>装修需求变更</span><a class="btn btn-xs">已确认</a></li>-->
+            <!--<li><span class="elc w-70"><span class="li-time">11.28</span>装修需求变更</span><a class="btn btn-xs">待处理</a></li>-->
+            <!--<li><span class="elc w-70"><span class="li-time">11.28</span>装修需求变更装修需求变更装修需求变更</span><a class="btn btn-xs">待处理</a></li>-->
+        </ul>
+        <div class="t-center"><a href="javascript:;" class="btn btn-lg btn-add-alt">添加变更</a></div>
+    </section>
+    <section id="order" class="sec-order">
+        <p class="fs-lg"><span class="fa fa-home"></span>材料订购</p>
+        <table border="1">
+            <!--<tr><th>已购买材料</th><th>当前订购进度</th><th>预计到达时间</th></tr>-->
+            <!--<tr><td>材料一</td><td>已发货</td><td>2015-12-20</td></tr>-->
+        </table>
+        <ul class="t-left">
+            <!--<li><label><input name="order" type="checkbox" value="" />材料1</label></li>-->
+        </ul>
+        <div class="t-center"><a href="javascript:;" class="btn btn-lg btn-order">购买选中材料</a></div>
+    </section>
+    <section id="advice">
+        <p class="fs-lg"><span class="fa fa-home"></span>疑问 & 建议</p>
+        <textarea class="t-left" rows="5" placeholder="在此输入您的疑问或意见..."></textarea>
+        <p class="form-error" style="display: none">请输入内容</p>
+        <div class="t-center"><a href="javascript:;" class="btn btn-lg btn-adv">确认提交</a></div>
+    </section>
+</div>
+
+<div class="maskImgs modal modal_maskImgs">
+    <div class="slider-container">
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-wrapper">
+            <!--<div class="swiper-slide">-->
+                <!--<a href="img/example.png"><img alt="" src="img/example.png"></a>-->
+                <!--<div class="slider-desc"><p>23333</p></div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <a href="javascript:;" class="btn-m-close" data-action="close">关闭</a>
+</div>
+
+<div id="login" data-current="true">
+    <div class="login-form">
+        <p class="fs-lg">请填写您的信息</p>
+        <input type="tel" class="input" placeholder="手机号码" maxlength="11">
+        <p class="form-error" style="display: none;">请输入正确的手机号码</p>
+        <input type="text" class="input" placeholder="姓名">
+        <p class="form-error" style="display: none">请输入您的姓名</p>
+        <a href="javascript:;" class="btn btn-lg btn_login">注册</a>
+    </div>
+</div>
+
+<div id="step" data-current="false">
+    <header class="fs-lg">
+        <span class="step-title"><span class="fa fa-home"></span>当前剩余工序</span>
+        <a href="javascript:;" class="btn-back" data-action="gopage" data-next="#main">返回首页</a>
+    </header>
+    <div class="step-form"></div>
+</div>
+
+<div class="pop modal modal_msg">
+    <div class="pop-inner">
+        <a href="javascript:;" class="pop_close" data-action="close">×</a>
+
+        <div class="pop-main">
+            <p class="title">消息</p>
+            <p class="content">内容内容内容 Content Content</p>
+        </div>
+    </div>
+    <a href="javascript:;" class="btn btn-lg btn-pop-act" data-action="close">确定</a>
+</div>
+<div class="pop modal modal_form">
+    <div class="pop-inner">
+        <a href="javascript:;" class="pop_close" data-action="close">×</a>
+        <div class="pop-main">
+            <p class="title">消息</p>
+            <p class="content">内容内容内容</p>
+            <textarea class="input" placeholder="在此输入..."></textarea>
+            <p class="form-error" id="pop_error">请输入内容</p>
+        </div>
+    </div>
+    <a href="javascript:;" class="btn btn-lg btn-pop-sub" data-action="close">提交</a>
+</div>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/fastclick-min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/js/transition.js"></script>
+<script src="bower_components/bootstrap/js/collapse.js"></script>
+<script src="js/swiper-3.2.7.jquery.min.js"></script>
+<script src="js/store.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>
